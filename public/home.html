@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech Word</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="home">
+        <h1>The Tech Word</h1>
+        <nav class="navbar">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item">homepage</a>
+            <a href="/dashboard" class="navbar-item">dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item">create post</a>
+            <button id="logout" class="button logout">logout</button>
+            {{else}}
+            <a href="/" class="navbar-item">homepage</a>
+            <a href="/login" class="btn login">login</a>
+            {{/if}}
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row mb-1">
+            <div class="card post">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">View Post</a>
+                  <p>Posted On: 06/04/2020 by <span class="post-username">TarunPara</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a href="#home">Back to Top</a>
+            <p>The Tech Word by <a href="https://github.com/TarunPara">TarunPara</a></p>
+        </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/logout.js"></script>
+</body>
+</html>
