@@ -26,22 +26,27 @@ Copy code
 npm install
 Create a .env file in the root directory and add your MySQL database credentials:
 
-plaintext
-Copy code
-DB_NAME=your_database_name
-DB_USER=your_mysql_username
-DB_PASSWORD=your_mysql_password
-DB_HOST=localhost
-Initialize the MySQL database by running the following command in the MySQL shell or any SQL client:
+Create a folder locally to nominate for cloning from online repo
+Clone with SSH by
+git clone git@github.com:leonhsu95/tech-blog.git"
+Additionally, please install NodeJS and the below npm packages
 
-sql
-Copy code
-source db/schema.sql;
-Optionally, you can seed the database with some initial data by running:
+npm i init -y
+npm i
+npm i bcrypt
+npm i connect-session-sequelize
+npm i dotenv
+npm i express
+npm i express-handlebars
+npm i express-session
+npm i handlebars
+npm i inquirer
+npm i mysql2
+npm i nodemon
+npm i sequelize
+Before you run the code, please change scripts:{start: } to 'node server.js' in the package.json file and change your database login credentials in the .env file.
 
-bash
-Copy code
-npm run seed
+It is highly encouraged to install Insomnia, MySQL and MySQL Workbench for RESTful API and Database functionalities to work.
 Start the application:
 
 bash
