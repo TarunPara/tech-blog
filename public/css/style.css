@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, .project:not(:last-child) {
+    border-bottom: 1px solid #bbb; /* Lighter grey for the border */
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #3498db; /* Changed to a bright blue */
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+  
+  .logo:link, .logo:visited, .logo:hover {
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .navbar a, .navbar a:visited {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #2c3e50; /* Dark blue-grey for navbar text */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .post {
+    margin: 20px 0;
+    border: 1px #bdc3c7 solid; /* Softer border color for posts */
+    text-align: right;
+  }
+  
+  .post-title, .post-title a:link, .post-title a:visited {
+    background-color: #ecf0f1; /* Light grey background for post titles */
+    color: #34495e; /* Dark blue for the title text */
+    text-decoration: none;
+  }
+  
+  .post-title a:hover {
+    color: #1abc9c; /* Change hover color to turquoise */
+  }
+  
+  .post-content {
+    padding: 10px !important;
+    text-align: left !important;
+  }
+  
+  .post-button, .post-author, .post-username, .dashboard-container, .footer-margin, .form-row, .signup, .signup-form div, .login-form div, .edit-post-form, .edit-post-form div, .register, .single-post-container, .comment-container, .comment-button, .comment-text, .comment-author, #signup button, .dashboard-post, .new-post-button, footer {
+    /* Apply your custom styles or keep these elements unchanged */
+  }
+  
+  footer {
+    margin-top: 60px;
+    font-size: 1.4em;
+    color: #7f8c8d; /* Gray color for footer text */
+  }
+  
